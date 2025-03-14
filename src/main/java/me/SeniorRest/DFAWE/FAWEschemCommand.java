@@ -30,7 +30,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.Future;
 
 public class FAWEschemCommand extends AbstractCommand implements Holdable {
 
@@ -41,6 +40,37 @@ public class FAWEschemCommand extends AbstractCommand implements Holdable {
         setSyntax("faweschem [load/unload/paste] [name:<name>] (file:<filename>) (<location>)");
         autoCompile();
     }
+
+    // <--[command]
+    // @Name faweschem
+    // @Syntax faweschem [load/unload/paste] [name:<name>] (file:<filename>) (<location>)
+    // @Required 2
+    // @Short Adds or removes a model from an entity.
+    // @Group DFAWE
+    //
+    // @Description
+    // Adds or removes a model from an entity.
+    // If the player disconnects, the model does not persist and the player becomes invisible. Use the 'meg_make_visible' mechanism to fix this.
+    // Models do not persist across worlds. They should be removed first, then added back.
+    //
+    // The model must be a name of a loaded model in ModelEngine.
+    //
+    // If you have come over from Mythic, this is equivalent to the `model` mechanic.
+    // To configure other options such as hitbox/invisible/damagetint/etc, adjust the MegModeledEntityTag object instead.
+    //
+    // @Usage
+    // Use to load a schematic.
+    // - ~faweschem name:MySchematic file:path
+    //
+    // @Usage
+    // Use to unload a schematic.
+    // - faweschem unload name:MySchematic
+    //
+    // @Usage
+    // Use to paste a loaded schematic with no air blocks.
+    // - faweschem paste name:MySchematic <player.location>
+    //
+    // -->
 
     // Поддерживаемые подкоманды
     private enum Type {

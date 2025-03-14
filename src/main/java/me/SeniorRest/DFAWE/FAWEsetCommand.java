@@ -27,6 +27,37 @@ public class FAWEsetCommand extends AbstractCommand {
         autoCompile();
     }
 
+    // <--[command]
+    // @Name faweset
+    // @Syntax faweset [firstloc:<location>] [secondloc:<location>] [material:<material>]
+    // @Required 2
+    // @Short Adds or removes a model from an entity.
+    // @Group DFAWE
+    //
+    // @Description
+    // Adds or removes a model from an entity.
+    // If the player disconnects, the model does not persist and the player becomes invisible. Use the 'meg_make_visible' mechanism to fix this.
+    // Models do not persist across worlds. They should be removed first, then added back.
+    //
+    // The model must be a name of a loaded model in ModelEngine.
+    //
+    // If you have come over from Mythic, this is equivalent to the `model` mechanic.
+    // To configure other options such as hitbox/invisible/damagetint/etc, adjust the MegModeledEntityTag object instead.
+    //
+    // @Usage
+    // Use to load a schematic.
+    // - ~faweset name:MySchematic file:path
+    //
+    // @Usage
+    // Use to unload a schematic.
+    // - faweset unload name:MySchematic
+    //
+    // @Usage
+    // Use to paste a loaded schematic with no air blocks.
+    // - faweset paste name:MySchematic <player.location>
+    //
+    // -->
+
     public static void autoExecute(ScriptEntry scriptEntry,
                                    @ArgName("firstloc") @ArgPrefixed LocationTag firstLoc,
                                    @ArgName("secondloc") @ArgPrefixed LocationTag secondLoc,
