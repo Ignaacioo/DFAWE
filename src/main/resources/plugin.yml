@@ -1,0 +1,6 @@
+name: DFAWE
+version: '1.0'
+authors: ['The DenizenScript Team', '0TickPulse', 'heypr']
+main: me.SeniorRest.DFAWE.DFAWE
+api-version: '1.21'
+depend: [Denizen, FastAsyncWorldEdit]
