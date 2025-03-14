@@ -3,6 +3,8 @@ package me.SeniorRest.DFAWE;
 import com.denizenscript.denizen.Denizen;
 import com.denizenscript.denizencore.DenizenCore;
 import com.denizenscript.denizencore.utilities.debugging.Debug;
+import me.SeniorRest.DFAWE.commands.FAWEschemCommand;
+import me.SeniorRest.DFAWE.commands.FAWEsetCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class DFAWE extends JavaPlugin {

@@ -1,4 +1,4 @@
-package me.SeniorRest.DFAWE;
+package me.SeniorRest.DFAWE.commands;
 
 import com.denizenscript.denizen.objects.LocationTag;
 import com.denizenscript.denizencore.objects.core.ElementTag;
